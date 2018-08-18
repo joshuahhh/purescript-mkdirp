@@ -17,6 +17,7 @@
     "package.json"
   ],
   "dependencies": {
+    "purescript-aff": "^5.0.0",
     "purescript-prelude": "^4.0.0",
     "purescript-effect": "^2.0.0",
     "purescript-node-fs": "^5.0.0",
