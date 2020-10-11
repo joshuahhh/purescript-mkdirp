@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "clean": "rimraf output && rimraf .pulp-cache",
-    "build": "pulp build -- --censor-lib --strict"
+    "clean": "rimraf output && rimraf .spago",
+    "build": "spago build"
   },
   "devDependencies": {
     "pulp": "^12.3.0",
