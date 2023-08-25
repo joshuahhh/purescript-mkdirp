@@ -1,12 +1,14 @@
 "use strict";
 
-exports.mkdirpImpl = require("mkdirp");
+import mkdirp from "mkdirp";
 
-exports.unsafeMkEff = function (f) {
+export const mkdirpImpl = mkdirp;
+
+export const unsafeMkEff = function (f) {
   return f;
 };
 
-exports.handleCallbackImpl = function (left, right, f) {
+export const handleCallbackImpl = function (left, right, f) {
   return function (err, value) {
     if (err) {
       f(left(err))();

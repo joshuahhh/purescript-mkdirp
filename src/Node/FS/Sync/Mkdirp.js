@@ -1,8 +1,10 @@
 "use strict";
 
-exports.mkdirp =
+import { sync as mkdirpSync } from "mkdirp";
+
+export const mkdirp =
   function (dir) {
     return function () {
-      require("mkdirp").sync(dir);
+      mkdirpSync(dir);
     };
   };
